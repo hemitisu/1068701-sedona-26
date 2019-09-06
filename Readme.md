@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Продан](https://up.htmlacademy.ru/htmlcss/26/user/1068701).
-* Наставник: [никита Попов 😎](https://htmlacademy.ru/profile/id50236).
+* Наставник: [Никита Попов 😎](https://htmlacademy.ru/profile/id50236).
 
 ---
 

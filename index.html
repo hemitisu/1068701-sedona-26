@@ -6,103 +6,114 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <a href="#"><img class="logo" src="./img/logo.svg" alt="Логотип Седона" width="140" height="72"></a>
-      <nav>
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Гостиницы</a></li>
+      <nav class="navigation">
+        <ul class="navigatin-list">
+          <li class="navigatin-list-item"><a href="#">Информация</a></li>
+          <li class="navigatin-list-item"><a href="#">Карта штата</a></li>
+          <li class="navigatin-list-item"><a href="#">Фото и видео</a></li>
+          <li class="navigatin-list-item"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
+      <img class="welcome" src="./img/welcome.svg" width="459" height="353" alt="Приветственная декоративная надпись Седоны">
     </header>
     <main>
-      <img class="welcome" src="./img/welcome.svg" width="459" height="353" alt="Приветственная декоративная надпись Седоны">
-      <h1>Седона-Небольшой городок в Аризоне Заслуживающий большего</h1>
+      <h1>Сайт туристического городка в штате Аризона</h1>
+      <p>Седона-Небольшой городок в Аризоне Заслуживающий большего</p>
       <h2>Рассмотрим 5причин, по которым Седона круче, чем Гранд Каньон!</h2>
-      <section class="features">
-        <ul>
-<!--Преимущество 1 -->
-          <li>
+      <section class="reasons">
+        <ul class="reasons-list">
+          <li class="reasons-list-item">
             <h3>Настоящий городок</h3>
+            <span class="feature-number">-№1-</span>
             <p>
-              <span class="feature-number">-№1-</span>
               Седона-не аттракцион для туристов, там течёт своя жизнь
             </p>
-            <ul>
-              <li>
-                <h4>Жильё</h4>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li>
-                <h4>Еда</h4>
-                <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь</p>
-              </li>
-              <li>
-                <h4>Сувениры</h4>
-                <p>Не только китайского, но и местного производства</p>
-              </li>
-            </ul>
+            <img src="./img/sedona-town-photo.jpg" width="800" height="256" alt="Фотография инфраструктуры Седоны">
           </li>
-<!--Преимущество 1 -->
-          <li>
+        </ul>
+      </section>
+      <section class="advantages">
+        <ul class="advantage-list">
+          <li class="advantage-list-item">
+            <h4>Жильё</h4>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="advantage-list-item">
+            <h4>Еда</h4>
+            <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь</p>
+          </li>
+          <li class="advantage-list-item">
+            <h4>Сувениры</h4>
+            <p>Не только китайского, но и местного производства</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reasons">
+        <ul class="reasons-list">
+          <li class="reasons-list-item">
+            <img src="./img/devil-bridge-photo.jpg" width="800" height="256" alt="Фото: Мост Дьявола">
             <h3>Там есть мост дьявола</h3>
+            <span class="feature-number">-№2-</span>
             <p>
-              <span class="feature-number">-№2-</span>
               Да, по нему можно пройти! Если конечно вы осмелитесь
             </p>
           </li>
-          <li>
+        </ul>
+      </section>
+      <section class="reasons">
+        <ul class="reasons-list">
+          <li class="reasons-list-item">
             <h3>Небольшая площадь</h3>
             <p>
               <span class="feature-number">-№3-</span>
               Все достопримечательности находятся очень близко
             </p>
           </li>
-          <li>
+          <li class="reasons-list-item">
             <h3>Красивая дорога</h3>
+            <span class="feature-number">-№4-</span>
             <p>
-              <span class="feature-number">-№4-</span>
               Ехать в Седону из Лас-Вегаса совсем не скучно
             </p>
           </li>
-          <li>
+          <li class="reasons-list-item">
             <h3>Мало туристов</h3>
+            <span class="feature-number">-№5-</span>
             <p>
-              <span class="feature-number">-№5-</span>
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
         </ul>
       </section>
-      <section class="hostel-search-form">
-        <h2>Заинтересовались?</h2>
+      <section class="hostel-search">
+        <h2>Поиск гостиниц</h2>
+        <span>Заинтересовались?</span>
         <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <form>
-          <h3>Поиск гостиницы в Седоне</h3>
+        <button class="form-view-button" type="button">Поиск гостиницы в Седоне</button>
+        <form class="hostel-search-form">
           <div class="field-holder">
-            <label for="check-in">Дата заезда</label>
-            <input type="text" id="check-in" name="check-in">
+            <label class="hostel-search-form-label" for="check-in">Дата заезда</label>
+            <input class="hostel-search-form-input" type="text" id="check-in" name="check-in">
           </div>
           <div class="field-holder">
-            <label for="check-out">Дата выезда</label>
-            <input type="text" id="check-out" name="check-out">
+            <label class="hostel-search-form-label" for="check-out">Дата выезда</label>
+            <input class="hostel-search-form-input" type="text" id="check-out" name="check-out">
           </div>
           <div class="field-holder">
-            <label for="groun-up-count">Взрослые</label>
-            <input type="number" id="groun-up-count" name="groun-up-count">
+            <label class="hostel-search-form-label" for="groun-up-count">Взрослые</label>
+            <input class="hostel-search-form-input" type="number" id="groun-up-count" name="groun-up-count">
           </div>
           <div class="field-holder">
-            <label for="children-count">Дети</label>
-            <input type="number" id="children-count" name="children-count">
+            <label class="hostel-search-form-label" for="children-count">Дети</label>
+            <input class="hostel-search-form-input" type="number" id="children-count" name="children-count">
           </div>
-          <input type="submit" value="Найти">
+          <input class="hostel-search-form-submit" type="submit" value="Найти">
         </form>
       </section>
     </main>
-    <footer>
-      <h2>Дополнительная информация</h2>
+    <footer class="site-footer">
       <a href="#">#visitsedona</a>
       <div class="social-buttons">
         <a class="twitter" href="#">Твиттер</a>

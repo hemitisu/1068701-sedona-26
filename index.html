@@ -19,7 +19,7 @@
       <img class="welcome" src="./img/welcome.svg" width="459" height="353" alt="Приветственная декоративная надпись Седоны">
     </header>
     <main>
-      <h1>Сайт туристического городка в штате Аризона</h1>
+      <h1 class="visualy-hidden">Сайт туристического городка в штате Аризона</h1>
       <p>Седона-Небольшой городок в Аризоне Заслуживающий большего</p>
       <h2>Рассмотрим 5причин, по которым Седона круче, чем Гранд Каньон!</h2>
       <section class="reasons">
@@ -88,7 +88,7 @@
         </ul>
       </section>
       <section class="hostel-search">
-        <h2>Поиск гостиниц</h2>
+        <h2 class="visualy-hidden">Поиск гостиниц</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="form-view-button" type="button">Поиск гостиницы в Седоне</button>
@@ -109,21 +109,20 @@
             <label class="hostel-search-form-label" for="children-count">Дети</label>
             <input class="hostel-search-form-input" type="number" id="children-count" name="children-count">
           </div>
-          <input class="hostel-search-form-submit" type="submit" value="Найти">
+          <button class="hostel-search-form-submit" type="submit">Найти</button>
         </form>
       </section>
     </main>
     <footer class="site-footer">
       <a href="#">#visitsedona</a>
       <div class="social-buttons">
-        <a class="twitter" href="#">Твиттер</a>
-        <a class="facebook" href="#">Фейсбук</a>
-        <a class="yotube" href="#">Ютуб</a>
+        <a class="twitter" href="#" aria-label="Твиттер"></a>
+        <a class="facebook" href="#" aria-label="Фейсбук"></a>
+        <a class="yotube" href="#" aria-label="Ютуб"></a>
       </div>
       <div class="copyright">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru">
-          <img class="html-academy-logo" src="./img/academy-logo.png" width="115" height="41" alt="Логотип академии">
+        <a class="html-academy-logo" href="https://htmlacademy.ru" aria-label="Логотип академии">
         </a>
       </div>
     </footer>

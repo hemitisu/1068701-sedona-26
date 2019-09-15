@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles-catalog.css">
   </head>
   <body>
     <header>
@@ -18,7 +18,7 @@
       </nav>
     </header>
     <main>
-      <h1>Поиск отеля</h1>
+      <h1 class="visualy-hidden">Поиск отеля</h1>
       <form class="hostel-sorting-form" action="" method="post" oninput="rangeto.value=rangevalue.value">
         <fieldset class="hostel-sorting-formgroup1">
           <h3>Инфраструктура</h3>
@@ -54,12 +54,14 @@
         <div class="range">
           <h3>Стоимость в сутки</h3>
           <div class="range-output">
-            <p class="range-from">от0</p>
+            <div class="range-from"><p>от 0</p></div>
             <span class="range-value-split"></span>
-            <div>до<output name="rangeto">3000</output></div>
+            <div class="range-to">до <output name="rangeto">3000</output></div>
           </div>
-          <input id="range" type="range" name="rangevalue" min="1" max="5000" step="1">
-          <button type="button">Показать</button>
+          <div class="range-slider-container">
+          <input class="slider" id="range" type="range" name="rangevalue" min="1" max="5000" step="10" aria-label="Ползунок для увеличения цены">
+          </div>
+          <button class="bautton show-result-button"type="button">Показать</button>
         </div>
       </form>
 
@@ -135,14 +137,14 @@
     <footer>
       <a href="#">#visitsedona</a>
       <div class="social-buttons">
-        <a class="twitter" href="#">Твиттер</a>
-        <a class="facebook" href="#">Фейсбук</a>
-        <a class="yotube" href="#">Ютуб</a>
+        <a class="twitter" href="#" aria-label="Твиттер"></a>
+        <a class="facebook" href="#" aria-label="Фейсбук"></a>
+        <a class="yotube" href="#" aria-label="Ютуб"></a>
       </div>
       <div class="copyright">
         <p>Website by</p>
         <a href="https://htmlacademy.ru">
-          <img class="html-academy-logo" src="./img/academy-logo.png" width="115" height="41" alt="Логотип академии">
+          <a class="html-academy-logo" href="https://htmlacademy.ru" aria-label="Логотип академии">
         </a>
       </div>
     </footer>

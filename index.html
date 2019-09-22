@@ -12,18 +12,23 @@
       <nav class="navigation">
         <ul class="navigatin-list">
           <li class="navigatin-list-item"><a href="#">Информация</a></li>
-          <li class="navigatin-list-item"><a href="#">Карта штата</a></li>
           <li class="navigatin-list-item"><a href="#">Фото и видео</a></li>
+          <li class="navigatin-list-item"><a href="#">Карта штата</a></li>
           <li class="navigatin-list-item"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
-      <img class="welcome" src="./img/welcome.svg" width="459" height="353" alt="Приветственная декоративная надпись Седоны">
+      <div class="landscape">
+        <img class="welcome" src="./img/welcome.svg" width="459" height="353" alt="Приветственная декоративная надпись Седоны">
+        <div class="landscape-bottom">
+          <p class="start-description1">Седона-Небольшой городок в Аризоне Заслуживающий большего</p>
+          <p class="start-description2">Рассмотрим 5причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+      </div>
     </header>
     <main>
+      <h2 class="visualy-hidden">5причин по которым Седона круче, чем гранд-каньон</h2>
       <h1 class="visualy-hidden">Сайт туристического городка в штате Аризона</h1>
-      <p>Седона-Небольшой городок в Аризоне Заслуживающий большего</p>
-      <h2>Рассмотрим 5причин, по которым Седона круче, чем Гранд Каньон!</h2>
-      <section class="reasons">
+      <section class="reasons reason-1">
         <ul class="reasons-list">
           <li class="reasons-list-item">
             <h3>Настоящий городок</h3>
@@ -35,7 +40,7 @@
           </li>
         </ul>
       </section>
-      <section class="advantages">
+      <section class="reasons advantages">
         <ul class="advantage-list">
           <li class="advantage-list-item">
             <h4>Жильё</h4>
@@ -43,15 +48,15 @@
           </li>
           <li class="advantage-list-item">
             <h4>Еда</h4>
-            <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь</p>
+            <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </li>
           <li class="advantage-list-item">
             <h4>Сувениры</h4>
-            <p>Не только китайского, но и местного производства</p>
+            <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </section>
-      <section class="reasons">
+      <section class="reasons reason-2">
         <ul class="reasons-list">
           <li class="reasons-list-item">
             <img src="./img/devil-bridge-photo.jpg" width="800" height="256" alt="Фото: Мост Дьявола">
@@ -63,12 +68,12 @@
           </li>
         </ul>
       </section>
-      <section class="reasons">
+      <section class="reasons other-reasons">
         <ul class="reasons-list">
           <li class="reasons-list-item">
             <h3>Небольшая площадь</h3>
+            <span class="feature-number">-№3-</span>
             <p>
-              <span class="feature-number">-№3-</span>
               Все достопримечательности находятся очень близко
             </p>
           </li>
@@ -91,31 +96,35 @@
       <section class="hostel-search">
         <h2 class="visualy-hidden">Поиск гостиниц</h2>
         <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="form-view-button" type="button">Поиск гостиницы в Седоне</button>
-        <form class="hostel-search-form">
-          <div class="field-holder">
-            <label class="hostel-search-form-label" for="check-in">Дата заезда</label>
-            <input class="hostel-search-form-input" type="text" id="check-in" name="check-in">
-          </div>
-          <div class="field-holder">
-            <label class="hostel-search-form-label" for="check-out">Дата выезда</label>
-            <input class="hostel-search-form-input" type="text" id="check-out" name="check-out">
-          </div>
-          <div class="field-holder">
-            <label class="hostel-search-form-label" for="groun-up-count">Взрослые</label>
-            <input class="hostel-search-form-input" type="number" id="groun-up-count" name="groun-up-count">
-          </div>
-          <div class="field-holder">
-            <label class="hostel-search-form-label" for="children-count">Дети</label>
-            <input class="hostel-search-form-input" type="number" id="children-count" name="children-count">
-          </div>
-          <button class="hostel-search-form-submit" type="submit">Найти</button>
-        </form>
+        <p>Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <div class="form-area">
+          <button class="form-view-button" type="button">Поиск гостиницы в Седоне</button>
+          <form class="hostel-search-form">
+            <div class="field-holder">
+              <label class="hostel-search-form-label" for="check-in">Дата заезда</label>
+              <input class="hostel-search-form-input" type="text" id="check-in" name="check-in">
+            </div>
+            <div class="field-holder">
+              <label class="hostel-search-form-label" for="check-out">Дата выезда</label>
+              <input class="hostel-search-form-input" type="text" id="check-out" name="check-out">
+            </div>
+            <div class="field-holder">
+              <label class="hostel-search-form-label" for="groun-up-count">Взрослые</label>
+              <input class="hostel-search-form-input" type="number" id="groun-up-count" name="groun-up-count">
+            </div>
+            <div class="field-holder">
+              <label class="hostel-search-form-label" for="children-count">Дети</label>
+              <input class="hostel-search-form-input" type="number" id="children-count" name="children-count">
+            </div>
+            <button class="hostel-search-form-submit" type="submit">Найти</button>
+          </form>
+        </div>
+        <div class="map-area">
+        </div>
       </section>
     </main>
     <footer class="site-footer">
-      <a href="#">#visitsedona</a>
+      <a class="hashteg" href="#">#visitsedona</a>
       <div class="social-buttons">
         <a class="twitter" href="#" aria-label="Твиттер"></a>
         <a class="facebook" href="#" aria-label="Фейсбук"></a>

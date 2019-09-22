@@ -1,3 +1,4 @@
+/*базовые стили начало*/
 @font-face {
     font-family: "PT-Sans";
     src: url('../fonts/PTSans-Regular.eot');
@@ -10,9 +11,11 @@
     font-style: normal;
 }
 
-
-body{
-  font-family: PT-Sans;
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
 }
 
 .visualy-hidden{
@@ -22,3 +25,219 @@ body{
   height: 1px;
   margin: -1px;
 }
+
+body{
+  font-family: PT-Sans;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: black;
+  text-transform: uppercase;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style: none;
+}
+/*базовые стили конец*/
+/*стили хеддера начало*/
+.navigation a{
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
+
+.landscape{
+  width: 1200px;
+  height: 800px;
+  background-image: url(../img/sedona-landscape.jpg);
+  background-size: cover;
+  background-color: #486776;
+  background-attachment: fixed;
+  border-top: 1px solid transparent;
+  position: relative;
+}
+
+.welcome{
+  width: 459px;
+  height: 353px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 72px;
+  display: block;
+}
+
+.landscape-bottom{
+  padding-top: 1px;
+  width: 1201px;
+  height: 274px;
+  background-image: url(../img/landscape-bottom.png);
+  position: absolute;
+  bottom: -1px;
+}
+
+.start-description1{
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  width: 600px;
+  margin-top: 122px;
+  }
+
+.start-description2{
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  margin-top: 42px;
+}
+/*стили хеддера конец*/
+/*Секции преимуществ начало*/
+.reasons
+{/*убирает выпадение марджинов из родителя*/
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  font-size: 14px;
+}
+
+.reasons h3,h4{
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
+  text-align: center;
+}
+
+.reasons p{
+  width: 295px;
+  text-align: center;
+}
+/*Стилизация преимуществ с голубым фоном начало*/
+.reason-1,
+.reason-2{
+  background-color: #81b3d2;
+}
+.reason-1,
+.reason-2{
+  color: white;
+}
+.reason-1 h3{
+  color: inherit;
+}
+.reason-2 h3{
+  color: inherit;
+}
+/*Стилизация преимуществ с голубым фоном конец*/
+/*Стилизация преимуществ с серым фоном начало*/
+.advantages,
+.other-reasons{
+  background-color: #eeeeee;
+}
+/*Стилизация преимуществ с серым фоном конец*/
+/*Секции преимуществ конец*/
+/*Форма поиска начало*/
+.hostel-search{
+  border-top: 1px solid transparent;
+}
+
+.form-area{
+  border-top: 1px solid transparent;
+  position: relative;
+}
+
+.map-area{
+  background-image: url(../img/map.png);
+  height: 472px;
+}
+
+.hostel-search h2 + p{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 62px;
+}
+
+.hostel-search p:nth-of-type(2){
+  margin-top: 40px;
+  text-align: center;
+}
+
+.form-view-button{
+  width: 568px;
+  height: 86px;
+  background: #766357;
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  margin-top: 53px;
+}
+
+.hostel-search-form{
+  width: 568px;
+  height: 359px;
+  background: #d7d7d7;
+  boreder-top: 1px solid transparent;
+  padding-top: 1px;
+  position: absolute;
+}
+
+.field-holder{
+  margin-top: 30px;
+  position: relative;
+}
+
+.hostel-search-form label{
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 9px;
+  left: 55px;
+}
+
+input[type=text]{
+  width: 346px;
+  height: 38px;
+  margin-left: 168px;
+}
+
+.field-holder:first-of-type{
+  margin-top: 55px;
+}
+
+.hostel-search-form-submit{
+  width: 458px;
+  height: 58px;
+  background: #81b3d2;
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+/*Форма поиска конец*/
+/*Стилизация футтера начало*/
+.site-footer{
+  min-height: 120px;
+}
+
+.hashteg{
+  font-size: 21px;
+  font-weight: bold;
+}
+/*Стилизация футтера конец*/
+
+
+
+
+
+
+
+
+*

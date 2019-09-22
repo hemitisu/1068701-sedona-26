@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./css/styles-catalog.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/normalize.css">
   </head>
   <body>
-    <header>
-      <a href="./index.html"><img class="logo" src="./img/logo.svg" alt="Логотип Седона" width="140" height="72"></a>
-      <nav>
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Гостиницы</a></li>
+    <header class="page-header">
+      <a href="#"><img class="logo" src="./img/logo.svg" alt="Логотип Седона" width="140" height="72"></a>
+      <nav class="navigation">
+        <ul class="navigatin-list">
+          <li class="navigatin-list-item"><a href="#">Информация</a></li>
+          <li class="navigatin-list-item"><a href="#">Фото и видео</a></li>
+          <li class="navigatin-list-item"><a href="#">Карта штата</a></li>
+          <li class="navigatin-list-item"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -24,32 +24,32 @@
         <fieldset class="hostel-sorting-formgroup1">
           <h3>Инфраструктура</h3>
           <div class="input-holder">
-          <input class="checkbox" id="swimming-pool" type="checkbox">
-          <label for="swimming-pool">Бассейн</label>
+            <input class="checkbox visualy-hidden" id="swimming-pool" type="checkbox">
+            <label class="sorting-form-label" for="swimming-pool">Бассейн</label>
           </div>
           <div class="input-holder">
-          <input class="checkbox" id="parking" type="checkbox">
-          <label for="parking">Парковка</label>
+            <input class="checkbox visualy-hidden" id="parking" type="checkbox">
+            <label class="sorting-form-label" for="parking">Парковка</label>
           </div>
           <div class="input-holder">
-          <input class="checkbox" id="wifi" type="checkbox">
-          <label for="wifi">Wifi</label>
+            <input class="checkbox visualy-hidden" id="wifi" type="checkbox">
+            <label class="sorting-form-label" for="wifi">Wifi</label>
           </div>
         </fieldset>
 
         <fieldset class="hostel-sorting-formgroup2">
-          <h3>Тип жилья</h3></h3>
+          <h3>Тип жилья</h3>
           <div class="input-holder">
-          <input class="checkbox" id="hostel" type="checkbox">
-          <label for="hostel">Гостиница</label>
+            <input class="checkbox visualy-hidden" id="hostel" type="checkbox">
+            <label class="sorting-form-label" for="hostel">Гостиница</label>
           </div>
           <div class="input-holder">
-          <input class="checkbox" id="motel" type="checkbox">
-          <label for="motel">Мотель</label>
+            <input class="checkbox visualy-hidden" id="motel" type="checkbox">
+            <label class="sorting-form-label" for="motel">Мотель</label>
           </div>
           <div class="input-holder">
-          <input class="checkbox" id="appartment" type="checkbox">
-          <label for="appartment">Аппартаменты</label>
+            <input class="checkbox visualy-hidden" id="appartment" type="checkbox">
+            <label class="sorting-form-label" for="appartment">Аппартаменты</label>
           </div>
         </fieldset>
         <div class="range">
@@ -62,7 +62,7 @@
           <div class="range-slider-container">
           <input class="slider" id="range" type="range" name="rangevalue" min="1" max="5000" step="10" aria-label="Ползунок для увеличения цены">
           </div>
-          <button class="bautton show-result-button"type="button">Показать</button>
+          <button class="button show-result-button"type="button">Показать</button>
         </div>
       </form>
 
@@ -79,14 +79,14 @@
             <li><button type="button">По рейтингу</button></li>
           </ul>
           <div class="sorting-buttons">
-            <button type="button">По возрастанию</button>
-            <button type="button">По убыванию</button>
+            <button type="button" aria-label="По возрастанию"></button>
+            <button type="button" aria-label="По убыванию"></button>
           </div>
         </div>
         <div class="sorting-result">
-          <h3>Результат сортировки</h3>
+          <h3 class="visualy-hidden">>Результат сортировки</h3>
           <ul>
-            <li>
+            <li class="sorting-result-item">
               <div class="sorting-result-img">
               <img src="./img/hotel1.jpg" alt="Фото первой гостиницы" width="135" height="90">
               </div>
@@ -101,7 +101,7 @@
                 <p>Рейтинг: 8.5</p>
               </div>
             </li>
-            <li>
+            <li class="sorting-result-item">
               <div class="sorting-result-img">
                 <img src="./img/hotel2.jpg" alt="Фото второй гостиницы" width="135" height="90">
               </div>
@@ -116,7 +116,7 @@
                 <p>Рейтинг: 8.9</p>
               </div>
             </li>
-            <li>
+            <li class="sorting-result-item">
               <div class="sorting-result-img">
                 <img src="./img/hotel3.jpg" alt="Фото третьей гостиницы" width="135" height="90">
               </div>
@@ -135,8 +135,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <a href="#">#visitsedona</a>
+    <footer class="site-footer">
+      <a class="hashteg" href="#">#visitsedona</a>
       <div class="social-buttons">
         <a class="twitter" href="#" aria-label="Твиттер"></a>
         <a class="facebook" href="#" aria-label="Фейсбук"></a>
@@ -144,8 +144,7 @@
       </div>
       <div class="copyright">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru">
-          <a class="html-academy-logo" href="https://htmlacademy.ru" aria-label="Логотип академии">
+        <a class="html-academy-logo" href="https://htmlacademy.ru" aria-label="Логотип академии">
         </a>
       </div>
     </footer>

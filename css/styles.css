@@ -44,6 +44,14 @@ a{
 ul{
   list-style: none;
 }
+
+h2{
+  font-size: 21px;
+}
+
+h3 h4{
+  font-size: 21px;
+}
 /*базовые стили конец*/
 /*стили хеддера начало*/
 .navigation a{
@@ -235,6 +243,215 @@ input[type=text]{
 
 
 
+
+/*Стили страницы с поиском
+-------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+*/
+
+.hostel-sorting-form{
+  background-color: #84a5c6;
+  color: white;
+}
+
+.hostel-sorting-form h3{
+  font-size: 16px;
+}
+
+fieldset{
+  border: none;
+}
+
+.panel h3{
+  font-size: 12px;
+}
+
+.sorting-critarias button{
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px dotted #81b3d2;
+  font-size: 12px;
+  color: #b1b1b1;
+  text-transform: uppercase;
+}
+
+.sorting-result ul{
+  padding: 0;
+  margin: 0;
+}
+
+.sorting-result-item{
+  border-top: 1px solid #e5e5e5;
+}
+
+.sorting-result-item button{
+  background-color: #81b3d2;
+  border: none;
+  min-width: 110px;
+  min-height: 27px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 7px 17px;;
+}
+
+.sorting-result-item button:nth-of-type(2){
+  background-color: #766357;
+}
+
+.sorting-result-rating p{
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  color: #666666;
+}
+/*Стилизация чекбоксов*/
+.sorting-form-label{
+display: inline-block;
+cursor: pointer;
+position: relative;
+}
+
+.checkbox:focus + label::before{
+  border-color: SteelBlue;
+}
+
+
+.input-holder{
+  vertical-align: middle;
+}
+
+.sorting-form-label::before{
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border: 2px solid white;
+  margin-right: 16px;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+.checkbox:checked + label::after{
+ content: '';
+ display: inline-block;
+ height: 12px;
+ width: 20px;
+ border-left: 4px solid white;
+ border-bottom: 4px solid white;
+ transform: rotate(-45deg);
+ position: absolute;
+ left: 6px;
+ top: 3px;
+}
+
+
+.range{
+  text-align: center;
+  width: 314px;
+}
+/*Стилизация чекбоксов*/
+
+/*Стилизация полей над рэнджем и кнопки под ним*/
+.range-output{
+border: 2px solid white;
+width: 314px;
+height: 32px;
+align-items: center;
+position: relative;
+font-size: 14px;
+color: white;
+text-transform: uppercase;
+}
+
+.range-slider-container{
+ width: 314px;
+ height: 22px;
+}
+
+.range-value-split{
+display: inline-block;
+width: 2px;
+height: 22px;
+background-color:  white;
+position: absolute;
+left: 50%;
+top: 15%;
+}
+
+.range-from,
+.range-to{
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+}
+
+.range-from{
+  left: 57px;
+}
+
+.range-from p{
+  margin: 0;
+  padding: 0;
+}
+
+.range-to{
+  right: 57px;
+}
+
+.show-result-button{
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  width: 133px;
+  height: 32px;
+  margin: auto;
+  margin-top: 23px;
+  text-transform: uppercase;
+}
+
+/*Стилизация полей над рэнджем и кнопки под ним*/
+
+/*Стилизация полосы и ползунка*/
+input[type=range]{
+  width: 100%;
+  height: 2px;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 50%;
+  border: 8px solid white;
+}
+
+input[type=range]:focus{
+  background-color: SteelBlue;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb:hover{
+  box-shadow: 0 0 0 1px SteelBlue;
+  outline: none;
+}
+/*Стилизация полосы и ползунка*/
+
+
+.visualy-hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 
 

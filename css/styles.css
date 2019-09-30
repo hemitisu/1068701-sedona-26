@@ -34,6 +34,9 @@ body{
   line-height: 24px;
   color: black;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a{
@@ -41,19 +44,45 @@ a{
   color: black;
 }
 
-ul{
-  list-style: none;
-}
 
 h2{
   font-size: 21px;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin: 0;
+  padding: 0;
 }
 
 h3 h4{
   font-size: 21px;
+  margin: 0;
+  padding: 0;
 }
+
+ul,li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container{
+  width: 1200px;
+}
+
 /*базовые стили конец*/
 /*стили хеддера начало*/
+
+.navigatin-list{
+  display: flex;
+}
+
+.site-logo{
+  
+}
+
 .navigation a{
   font-size: 14px;
   color: rgb(0, 0, 0);
@@ -63,31 +92,10 @@ h3 h4{
 
 .landscape{
   width: 1200px;
-  height: 800px;
+  height: 510px;
   background-image: url(../img/sedona-landscape.jpg);
   background-size: cover;
   background-color: #486776;
-  background-attachment: fixed;
-  border-top: 1px solid transparent;
-  position: relative;
-}
-
-.welcome{
-  width: 459px;
-  height: 353px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 72px;
-  display: block;
-}
-
-.landscape-bottom{
-  padding-top: 1px;
-  width: 1201px;
-  height: 274px;
-  background-image: url(../img/landscape-bottom.png);
-  position: absolute;
-  bottom: -1px;
 }
 
 .start-description1{
@@ -97,22 +105,69 @@ h3 h4{
   line-height: 26px;
   text-align: center;
   width: 600px;
-  margin-top: 122px;
   }
 
 .start-description2{
   font-size: 14px;
   color: rgb(51, 51, 51);
   text-align: center;
-  margin-top: 42px;
 }
 /*стили хеддера конец*/
 /*Секции преимуществ начало*/
-.reasons
-{/*убирает выпадение марджинов из родителя*/
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
+.reasons{
+  background-color: #eeeeee;
+  width: 1200px;
   font-size: 14px;
+  min-height: 256px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+
+.reason-1,
+.reason-2{
+  background-color: #81b3d2;
+  color: white;
+}
+
+.reasons-list{
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+
+.advantage-list{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: space-between;
+  min-height: 330px;
+}
+
+.reasons-list-item,
+.advantage-list-item{
+  min-height: 256px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.advantage-list-item{
+  min-width: 330px;
+  padding-top: 110px;
+}
+
+.reasons-list-item-img{
+  width: 800px;
+  padding: 0;
 }
 
 .reasons h3,h4{
@@ -128,36 +183,27 @@ h3 h4{
   width: 295px;
   text-align: center;
 }
+
+.feature-number{
+  margin-tpp: 30px;
+  margin-bottom: 30px;
+}
+
 /*Стилизация преимуществ с голубым фоном начало*/
-.reason-1,
-.reason-2{
-  background-color: #81b3d2;
-}
-.reason-1,
-.reason-2{
-  color: white;
-}
-.reason-1 h3{
-  color: inherit;
-}
+
+
+.reason-1 h3,
 .reason-2 h3{
   color: inherit;
 }
 /*Стилизация преимуществ с голубым фоном конец*/
-/*Стилизация преимуществ с серым фоном начало*/
-.advantages,
-.other-reasons{
-  background-color: #eeeeee;
-}
-/*Стилизация преимуществ с серым фоном конец*/
+
 /*Секции преимуществ конец*/
 /*Форма поиска начало*/
 .hostel-search{
-  border-top: 1px solid transparent;
 }
 
 .form-area{
-  border-top: 1px solid transparent;
   position: relative;
 }
 
@@ -166,14 +212,12 @@ h3 h4{
   height: 472px;
 }
 
-.hostel-search h2 + p{
+.hostel-search-invite1{
   font-size: 30px;
   font-weight: bold;
-  margin-top: 62px;
 }
 
-.hostel-search p:nth-of-type(2){
-  margin-top: 40px;
+.hostel-search-invite2{
   text-align: center;
 }
 
@@ -185,7 +229,6 @@ h3 h4{
   font-weight: bold;
   color: white;
   border: none;
-  margin-top: 53px;
 }
 
 .hostel-search-form{

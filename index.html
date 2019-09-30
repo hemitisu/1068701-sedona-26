@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./css/normalize.css">
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
-      <a href="#"><img class="logo" src="./img/logo.svg" alt="Логотип Седона" width="140" height="72"></a>
+      <a href="#"><img class="site-logo" src="./img/logo.svg" alt="Логотип Седона" width="140" height="72"></a>
       <nav class="navigation">
         <ul class="navigatin-list">
           <li class="navigatin-list-item"><a href="#">Информация</a></li>
@@ -18,24 +19,23 @@
         </ul>
       </nav>
       <div class="landscape">
-        <img class="welcome" src="./img/welcome.svg" width="459" height="353" alt="Приветственная декоративная надпись Седоны">
-        <div class="landscape-bottom">
-          <p class="start-description1">Седона-Небольшой городок в Аризоне Заслуживающий большего</p>
-          <p class="start-description2">Рассмотрим 5причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </div>
       </div>
     </header>
     <main>
-      <h2 class="visualy-hidden">5причин по которым Седона круче, чем гранд-каньон</h2>
       <h1 class="visualy-hidden">Сайт туристического городка в штате Аризона</h1>
-      <section class="reasons reason-1">
+      <p class="start-description1">Седона-Небольшой городок в Аризоне Заслуживающий большего</p>
+      <p class="start-description2">Рассмотрим 5причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <h2 class="visualy-hidden">5причин по которым Седона круче, чем гранд-каньон</h2>
+      <section class="reasons">
         <ul class="reasons-list">
-          <li class="reasons-list-item">
+          <li class="reasons-list-item  reason-1">
             <h3>Настоящий городок</h3>
             <span class="feature-number">-№1-</span>
             <p>
               Седона-не аттракцион для туристов, там течёт своя жизнь
             </p>
+          </li>
+          <li class="reasons-list-item reasons-list-item-img">
             <img src="./img/sedona-town-photo.jpg" width="800" height="256" alt="Фотография инфраструктуры Седоны">
           </li>
         </ul>
@@ -56,20 +56,18 @@
           </li>
         </ul>
       </section>
-      <section class="reasons reason-2">
+      <section class="reasons">
         <ul class="reasons-list">
-          <li class="reasons-list-item">
+          <li class="reasons-list-item reasons-list-item-img">
             <img src="./img/devil-bridge-photo.jpg" width="800" height="256" alt="Фото: Мост Дьявола">
+          </li>
+          <li class="reasons-list-item  reason-2">
             <h3>Там есть мост дьявола</h3>
             <span class="feature-number">-№2-</span>
             <p>
               Да, по нему можно пройти! Если конечно вы осмелитесь
             </p>
           </li>
-        </ul>
-      </section>
-      <section class="reasons other-reasons">
-        <ul class="reasons-list">
           <li class="reasons-list-item">
             <h3>Небольшая площадь</h3>
             <span class="feature-number">-№3-</span>
@@ -95,8 +93,8 @@
       </section>
       <section class="hostel-search">
         <h2 class="visualy-hidden">Поиск гостиниц</h2>
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="hostel-search-invite1">Заинтересовались?</p>
+        <p class="hostel-search-invite2">Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div class="form-area">
           <button class="form-view-button" type="button">Поиск гостиницы в Седоне</button>
           <form class="hostel-search-form">
@@ -136,5 +134,6 @@
         </a>
       </div>
     </footer>
+    </div>
   </body>
 </html>

@@ -40,37 +40,18 @@ body{
   text-transform: uppercase;
 }
 
+.template{
+  position:absolute;
+  opacity:0.5;
+  z-index:1
+}
+
 main{
-  padding-top: 65px;
+  padding-top: 38px;
 }
 
 img{ 
   max-width: 100% 
-}
-
-.page-header a{
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: #000000;
-}
-.site-footer a{
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: #000000;
-}
-
-
-.reasons p{
-  margin: 0;
-  padding: 0;
-}
-
-.reasons ul,li{
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .container{
@@ -84,7 +65,7 @@ img{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: 56px;
+  min-height: 28px;
   align-items: center;
   padding-right: 73px;
   padding-left: 73px;
@@ -108,7 +89,7 @@ img{
 }
 
 .navigatin-list-right li{
-  margin-left: 150px;
+  margin-left: 165px;
   margin-right: none;
 }
 
@@ -122,6 +103,13 @@ img{
   height: 72px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.page-header a{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #000000;
 }
 
 .navigatin-list-item a{
@@ -142,7 +130,8 @@ img{
 .start-description1{
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 41px;
+  margin-bottom: 28px;
+  line-height: 28px;
   font-size: 21px;
   color: #000000;
   font-weight: bold;
@@ -152,7 +141,7 @@ img{
   }
 
 .start-description2{
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   font-size: 14px;
   color: rgb(51, 51, 51);
   text-align: center;
@@ -192,6 +181,17 @@ img{
   background-color: white;
 }
 
+.reasons p{
+  margin: 0;
+  padding: 0;
+}
+
+.reasons ul,li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .reasons-list-item,
 .advantage-list-item{
   display: flex;
@@ -200,12 +200,47 @@ img{
   align-items: center;
   min-height: 256px;
   width: 400px;
-  padding-top: 20px;
+  padding: 0;
+  padding-top: 48px;
+  line-height: 21px;
 }
 
 .advantage-list-item{
+  position: relative;
   min-width: 330px;
-  padding-top: 110px;
+  padding: 0;
+  padding-top: 160px;
+}
+
+.house-item::before{
+  position: absolute;
+  top: 60px;
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-image: url(/img/icon-house.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.food-item::before{
+  position: absolute;
+  top: 60px;
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-image: url(/img/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Souvenirs-item::before{
+  position: absolute;
+  top: 60px;
+  content: "";
+  width: 64px;
+  height: 76px;
+  background-image: url(/img/icon-present.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .reasons-list-item-img{
@@ -216,9 +251,10 @@ img{
 .reasons h3,h4{
   width: 150px;
   font-size: 21px;
+  margin: 0;
+  margin-bottom: 25px;
   color: #000000;
   font-weight: bold;
-  text-align: center;
   text-align: center;
 }
 
@@ -228,8 +264,7 @@ img{
 }
 
 .feature-number{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /*Стилизация преимуществ с голубым фоном начало*/
@@ -244,7 +279,8 @@ img{
 /*Секции преимуществ конец*/
 /*Форма поиска начало*/
 .hostel-search{
-  padding-top: 60px;
+  padding: 0;
+  padding-top: 55px;
   text-align: center;
 }
 
@@ -256,12 +292,12 @@ img{
 }
 
 .map-area{
-  background-image: url(../img/map.png);
   height: 472px;
 }
 
 .hostel-search-invite1{
-  margin-bottom: 40px;
+  margin: 0;
+  margin-bottom: 30px;
   font-size: 30px;
   font-weight: bold;
 }
@@ -279,40 +315,93 @@ img{
   font-weight: bold;
   color: white;
   border: none;
+  text-transform: uppercase;
 }
 
 .hostel-search-form{
-  width: 568px;
-  height: 359px;
-  background: #d7d7d7;
-  padding-top: 1px;
   position: absolute;
-}
-
-.field-holder{
-  margin-top: 30px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 568px;
+  height: 395px;
+  padding-top: 55px;
+  padding-right: 55px;
+  padding-left: 55px;
+  background-color: #ffffff;
 }
 
 .hostel-search-form label{
-  position: absolute;
   font-size: 14px;
   font-weight: bold;
-  top: 9px;
-  left: 55px;
 }
 
-input[type=text]{
+.field-holder{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 3px;
+}
+
+.check-input{
   width: 346px;
   height: 38px;
-  margin-left: 168px;
+  padding-left: 15px;
+  background-color: #f2f2f2;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.field-holder:first-of-type{
-  margin-top: 55px;
+.number-field-holder{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-.hostel-search-form-submit{
+.number-area{
+  display: flex;
+  align-items: center;
+}
+
+label[for="grown-up-number"]{
+  margin: 0;
+  margin-left: 3px;
+  margin-right: 40px;
+}
+
+label[for="children-number"]{
+  margin-right: 25px;
+}
+
+.people-number-input{
+  width: 38px;
+  height: 38px;
+  padding-left: 15px;
+  background-color: #f2f2f2;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+.minus-button,
+.plus-button{
+  background-color: #f2f2f2;
+  border: none;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  color: #a9a9a9;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.hostel-search-submit{
   width: 458px;
   height: 58px;
   background: #81b3d2;
@@ -320,19 +409,70 @@ input[type=text]{
   font-weight: bold;
   color: white;
   border: none;
+  text-transform: uppercase;
 }
 /*Форма поиска конец*/
 /*Стилизация футтера начало*/
 .site-footer{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 120px;
 }
 
-.hashteg{
+.site-footer a{
+  margin: 0;
+  text-decoration: none;
+  color: #000000;
+}
+
+.site-footer .hashteg{
+  display: block;
+  margin-left: 133px;
   font-size: 21px;
   font-weight: bold;
+}
+
+.social-list{
+  margin: 0;
+  padding: 0;
+  margin-left: -100px;
+  display: flex;
+}
+
+.social-button{
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-list li:nth-of-type(2){
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.twitter{
+  background-image: url(/img/twitter-icon.svg); 
+}
+
+.facebook{
+  background-image: url(/img/fb-icon.svg); 
+}
+
+.yotube{
+  background-image: url(/img/youtube-icon.svg); 
+}
+
+.copyright{
+  margin-right: 100px;
+}
+
+.copyright svg{
+  width: 115px;
+  height: 41px;
 }
 /*Стилизация футтера конец*/
 

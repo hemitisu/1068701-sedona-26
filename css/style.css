@@ -318,6 +318,17 @@ img{
   text-transform: uppercase;
 }
 
+.form-view-button:hover{
+  background-color: #604e43;
+  
+}
+
+.form-view-button:active{
+  background-color: #503e33;
+  color: #857871; 
+  
+}
+
 .hostel-search-form{
   position: absolute;
   display: flex;
@@ -354,6 +365,43 @@ img{
   font-weight: bold;
 }
 
+.check-input:hover{
+  background-color: #ebebeb;
+}
+
+.check-input:focus{
+  background-color: #ffffff;
+}
+
+
+.date-select button{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 65px;
+  border: none;
+  background: none;
+}
+
+.choose-date-btn
+.choose-date-btn:active,
+.choose-date-btn:focus{
+  outline: none;
+}
+
+.choose-date-btn path{
+  fill: #a9a9a9;
+}
+
+.choose-date-btn:hover path{
+  fill: #000000;
+}
+
+.choose-date-btn:active path,
+.choose-date-btn:focus path{
+  fill: #81b3d2;
+}
+
 .number-field-holder{
   display: flex;
   justify-content: space-between;
@@ -376,14 +424,9 @@ label[for="children-number"]{
   margin-right: 25px;
 }
 
-.people-number-input{
+.people-number{
   width: 38px;
   height: 38px;
-  padding-left: 15px;
-  background-color: #f2f2f2;
-  border: none;
-  text-transform: uppercase;
-  font-weight: bold;
   margin: 0;
 }
 
@@ -401,16 +444,36 @@ label[for="children-number"]{
   vertical-align: middle;
 }
 
+.minus-button:hover,
+.plus-button:hover{
+  color: #000000;
+}
+
+.minus-button:active,
+.plus-button:active{
+  color: #81b3d2;
+}
+
 .hostel-search-submit{
   width: 458px;
   height: 58px;
   background: #81b3d2;
   font-size: 21px;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
   border: none;
   text-transform: uppercase;
 }
+
+.hostel-search-submit:hover{
+  background-color: #669ec0;
+}
+
+.hostel-search-submit:active{
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
 /*Форма поиска конец*/
 /*Стилизация футтера начало*/
 .site-footer{
@@ -435,8 +498,8 @@ label[for="children-number"]{
 
 .social-list{
   margin: 0;
+  margin-left: 25px;
   padding: 0;
-  margin-left: -100px;
   display: flex;
 }
 
@@ -449,6 +512,17 @@ label[for="children-number"]{
   background-position: center;
 }
 
+.social-button:hover{
+  background-color: #669ec0;
+}
+
+.social-button:active{
+  background-color: #5496bd;
+}
+
+.social-button:active{
+  
+}
 .social-list li:nth-of-type(2){
   margin-right: 6px;
   margin-left: 6px;
@@ -458,21 +532,49 @@ label[for="children-number"]{
   background-image: url(/img/twitter-icon.svg); 
 }
 
+.twitter:active{
+  background-image: url(/img/twitter-active.png);
+}
+
 .facebook{
   background-image: url(/img/fb-icon.svg); 
+}
+
+.facebook:active{
+  background-image: url(/img/fb-active.png);
 }
 
 .yotube{
   background-image: url(/img/youtube-icon.svg); 
 }
 
+.yotube:active{
+  background-image: url(/img/youtube-active.png); 
+}
+
 .copyright{
+  display: flex;
   margin-right: 100px;
+  align-items: center;
+}
+
+.copyright p{
+  margin-right: 10px;
+  display: inline;
 }
 
 .copyright svg{
   width: 115px;
   height: 41px;
+}
+
+.html-academy-logo path{
+  fill: #000000;
+  
+}
+
+.html-academy-logo svg{
+  margin-top: 6px;
 }
 /*Стилизация футтера конец*/
 

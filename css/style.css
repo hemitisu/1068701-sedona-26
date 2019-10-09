@@ -43,8 +43,8 @@ body{
 
 .template{
   position:absolute;
-  opacity:0.3;
-  z-index:1
+  opacity: 0.6;
+  z-index: 1;
 }
 
 .index-content{
@@ -121,6 +121,20 @@ img{
   font-weight: bold;
   text-align: center;
 }
+
+.curent-link a{
+  color: #766357;
+}
+
+.navigation-list-item a:hover{
+  color: #81b3d2;
+}
+
+.navigation-list-item a:active{
+  color: #c7c7c7;
+}
+
+
 
 .landscape{
   width: 1200px;
@@ -633,6 +647,7 @@ label[for="children-number"]{
   display: flex;
 }
 
+
 .checkbox-holder{
   margin-bottom: 20px;
 }
@@ -671,33 +686,373 @@ position: relative;
  left: 6px;
  top: 3px;
 }
+
+.checkbox:disabled +label::before{
+  border: 2px solid #8c8c8c;
+}
+
+.checkbox:disabled +label::after{
+  border-left: 4px solid #8c8c8c;
+  border-bottom: 4px solid #8c8c8c;
+}
+
+.checkbox:disabled +label{
+  color: #8c8c8c;
+}
 /*Стилизация чекбоксов*/
 
-.hostel-search-result{
-  padding-right: 72px;
-  padding-left: 72px;
+.filter-range {
+  margin-left: auto;
+  margin-top: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls{
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  width: 317px;
+  height: 34px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 2px;
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+}
+
+.price-controls label{
+  margin-top: 2px;
+}
+
+.price-controls .min-price{
+  margin-left: 65px;
+}
+
+.price-controls .max-price{
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.price-controls input{
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls{
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale{
+  height: 2px;
+  width: 317px;
+  background: rgba(255, 255, 255, 0.3); 
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  box-sizing: content-box;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover{
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .panel{
   display: flex;
-  align-items: center;
+  padding-top: 33px;
+  padding-bottom: 30px;
+  padding-left: 72px;
+  padding-right: 72px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .panel h2{
   font-size: 21px;
-  
+  font-weight: bold;
+  margin: 0;
+  margin-right: 50px;
 }
 
 .panel h3{
   font-size: 12px;
+  margin: 0;
+  margin-right: 40px;
 }
 
 .sorting-critarias{
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  align-items: center;
+}
+
+.sorting-critarias li:nth-child(2){
+  margin: 0;
+  margin-right: 32px;
+  margin-left: 32px;
 }
 
 .sorting-buttons{
   display: flex;
+  justify-content: center;
+  margin-left: auto;
+  position: relative;
+  right: -5px;
+}
+
+.sorting-button2{
+  margin-left: 4px;
+  transform: rotate(180deg);
+}
+
+.sorting-button{
+  display: flex;
+  justify-content: center;
   align-items: center;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: none;
+}
+
+.sorting-button polygon{
+  fill: #cacaca;
+}
+
+.sorting-button:hover polygon{
+  fill: #231f20;
+}
+
+.curent-sorting-btn polygon{
+  fill: #83b4d3;
+}
+
+.sorting-button:active polygon,
+.sorting-button:focus polygon{
+  fill: #83b4d3;
+}
+
+.sorting-button:focus{
+  outline: none;
+}
+
+.sorting-critarias button{
+  padding: 0;
+  border: none;
+  background: none;
+  border-bottom: 1px dotted #81b3d2;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #b1b1b1;
+  outline: none;
+}
+
+.sorting-critarias button:hover,
+.sorting-critarias button:focus{
+  color: #abcce1;
+}
+
+.sorting-critarias button:active{
+  color: #000000;
+  border: none;
+}
+
+.sorting-critarias .sorting-argument{
+  color: #abcce1;
+  border: none;
+}
+
+.sorting-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sorting-item{
+  display: flex;
+  align-content: space-between;
+  margin: 0;
+  padding: 0; 
+  padding: 30px 72px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sorting-item img{
+  margin-right: 30px;
+}
+
+.sorting-info{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sorting-info a{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 80%;
+  border: none;
+  text-decoration: none;
+  color: #000000;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+  cursor: default;
+}
+
+.sorting-info a:hover{
+  color: #81b3d2;
+}
+
+.sorting-info a:active{
+  color: #b2b2b2;
+}
+
+.sorting-info p{
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-row{
+  display: flex;
+}
+
+.sorting-column1{
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+
+.sorting-column button{
+  padding: 5px 17px;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #81b3d2;
+}
+
+.sorting-column button:hover{
+  background-color: #669ec0;
+}
+
+.sorting-column button:active{
+  background-color: #5496bd;
+  color: #7aadcb;
+}
+
+.sorting-column2 button{
+  background-color: #766357;
+}
+
+.sorting-column2 button:hover{
+  background-color: #604e43;
+}
+
+.sorting-column2 button:active{
+  background-color: #503e33;
+  color: #857871;
+}
+
+.sorting-column p{
+  margin-bottom: 12px;
+}
+
+.sorting-column2{
+  display: flex;
+  flex-direction: column;
+}
+
+.sorting-rating{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.sorting-rating p{
+  margin: 0;
+  padding: 0;
+  padding: 1px 15px;
+  background-color: #f2f2f2;
+  color: #b1b1b1;
+}
+
+.stars{
+  text-align: end;
+  width: 90px;
+  height: 17px;
+}
+
+.stars img{
+  margin: 0;
+  padding: 0;
 }

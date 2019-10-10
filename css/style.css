@@ -63,39 +63,6 @@ img{
 
 /*базовые стили конец*/
 /*стили хеддера начало*/
-
-.navigation-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  min-height: 28px;
-  align-items: center;
-  padding-right: 73px;
-  padding-left: 73px;
-}
-
-.navigation-list-left{
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 500px;
-}
-
-.navigation-list-right{
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 500px;
-}
-
-.navigation-list-left li{
-  margin-right: 150px;
-  margin-left: none;
-}
-
-.navigation-list-right li{
-  margin-left: 165px;
-  margin-right: none;
-}
-
 .page-header .site-logo{
   position: absolute;
   top: 0;
@@ -111,8 +78,35 @@ img{
 .page-header a{
   margin: 0;
   padding: 0;
+  line-height: 26px;
   text-decoration: none;
   color: #000000;
+}
+
+.navigation{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 28px;
+  align-items: center;
+  padding-right: 73px;
+  padding-left: 73px;
+}
+
+.navigation-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 335px;
+}
+
+
+.navigation-list-item{
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
 .navigation-list-item a{
@@ -983,16 +977,22 @@ position: relative;
   display: flex;
 }
 
-.sorting-column1{
+.sorting-column{
   display: flex;
   flex-direction: column;
+  padding-top: 8px;
   margin-right: 5px;
 }
 
+.sorting-column p{
+  margin-bottom: 12px;
+}
+
 .sorting-column button{
-  padding: 5px 17px;
+  padding: 4px 17px;
   border: none;
   font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: bold;
@@ -1019,15 +1019,6 @@ position: relative;
 .sorting-column2 button:active{
   background-color: #503e33;
   color: #857871;
-}
-
-.sorting-column p{
-  margin-bottom: 12px;
-}
-
-.sorting-column2{
-  display: flex;
-  flex-direction: column;
 }
 
 .sorting-rating{

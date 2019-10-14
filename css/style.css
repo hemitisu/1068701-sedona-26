@@ -299,16 +299,20 @@ img{
 /*Секции преимуществ конец*/
 /*Форма поиска начало*/
 .hostel-search{
+  position: relative;
   padding: 0;
   padding-top: 55px;
   text-align: center;
 }
 
 .form-area{
-  position: relative;
+  position: absolute;
+  left: 50%;
+  margin-left: -284px;
+  top: 208px;
   width: 568px;
-  margin-left: auto;
-  margin-right: auto;
+  overflow: hidden;
+  min-height: 86px;
 }
 
 .map-area{
@@ -324,10 +328,13 @@ img{
 
 .hostel-search-invite2{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 138px;
 }
 
 .form-view-button{
+  position: absolute;
+  left: 0;
+  z-index: 1;
   width: 568px;
   height: 86px;
   background: #766357;
@@ -336,6 +343,37 @@ img{
   color: white;
   border: none;
   text-transform: uppercase;
+}
+
+.modal-hide{
+  animation-name: hide;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes hide{
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-400px);
+  }
+}
+
+.modal-show{
+  animation-name: show;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes show{
+  0% {
+    transform: translateY(-400px);
+  }
+  
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .form-view-button:hover{
@@ -350,7 +388,7 @@ img{
 }
 
 .hostel-search-form{
-  position: absolute;
+  margin-top: 86px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -467,21 +505,44 @@ label[for="children-number"]{
   height: 38px;
   margin: 0;
   color: #a9a9a9;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 0px;
   text-align: center;
   vertical-align: middle;
+   
+}
+
+.minus-button{
+  background-image: url(../img/signs.png);
+  background-repeat: no-repeat;
+  background-position: 14px 13px;
 }
 
 .minus-button:hover,
-.plus-button:hover{
-  color: #000000;
+.minus-button:focus{
+  outline: none;
+  background-position: 14px -26px;
 }
 
-.minus-button:active,
-.plus-button:active{
-  color: #81b3d2;
+.minus-button:active{
+  background-position: 14px -64px;
 }
+
+.plus-button{
+  background-image: url(../img/signs.png);
+  background-repeat: no-repeat;
+  background-position: -64px 13px;
+}
+
+.plus-button:hover,
+.plus-button:focus{
+  outline: none;
+  background-position: -64px -26px;
+}
+
+.plus-button:active{
+  background-position: -64px -64px;
+}
+
 
 .hostel-search-submit{
   width: 458px;

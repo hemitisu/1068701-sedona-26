@@ -1,7 +1,6 @@
 var viewButton=document.querySelector('.form-view-button');
 var modal=document.querySelector('.hostel-search-form');
 
-modal.classList.add("modal-hide");
 
 viewButton.addEventListener("click", function (evt) {
     evt.preventDefault();

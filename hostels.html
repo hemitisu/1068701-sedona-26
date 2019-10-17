@@ -4,21 +4,19 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style-min.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div class="container">
     <header class="page-header">
-      <a href="index.html" class="site-logo"><img class="site-logo" src="./img/logo.svg" alt="Логотип Седона" width="140" height="72"></a>
+      <a href="./index.html" class="site-logo"><img class="site-logo" src="./img/logo.svg" alt="Логотип Седона" width="140" height="72"></a>
       <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-list-item"><a href="#">Информация</a></li>
-            <li class="navigation-list-item"><a href="#">Фото и видео</a></li>
-          </ul>
-          <ul class="navigation-list">
-            <li class="navigation-list-item"><a href="#">Карта штата</a></li>
-            <li class="navigation-list-item curent-link"><a href="hostels.html">Гостиницы</a></li>
-          </ul> 
+        <ul class="navigation-list">
+          <li class="navigation-list-item"><a href="#">Информация</a></li>
+          <li class="navigation-list-item"><a href="#">Фото и видео</a></li>
+          <li class="navigation-list-item"><a href="#">Карта штата</a></li>
+          <li class="navigation-list-item curent-link"><a href="hostels.html">Гостиницы</a></li>
+        </ul> 
       </nav>
     </header>
     <main>
@@ -77,9 +75,9 @@
           <h2>Найдено: <span class="hostels-count">3</span></h2>
           <h3>Сортировка</h3>
           <ul class="sorting-critarias">
-            <li><button class="sorting-argument" type="button">По цене</button></li>
-            <li><button type="button">По типу</button></li>
-            <li><button type="button">По рейтингу</button></li>
+            <li><a class="sorting-argument" href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
           </ul>
           <div class="sorting-buttons">
             <button class="sorting-button" type="button" aria-label="По возрастанию">
@@ -106,17 +104,17 @@
                 <div class="sorting-row">
                   <div class="sorting-column sorting-column1">
                     <p>Гостиница</p>
-                    <button type="button">Подробнее</button>
+                    <a href="#">Подробнее</a>
                   </div>
                   <div class="sorting-column sorting-column2">
                     <p>От 4000р.</p>
-                    <button type="button">Забронировать</button>
+                    <a href="#">Забронировать</a>
                   </div>
                 </div>
               </div>
               <div class="sorting-rating">
-                <div class="stars">
-                  <img src="img/4stars.png"  alt="звёздочки">
+                <div class="stars four-stars">
+                  4 звезды
                 </div>
                 <p>Рейтинг: 8.5</p>
               </div>
@@ -128,17 +126,17 @@
                 <div class="sorting-row">
                   <div class="sorting-column sorting-column1">
                     <p>Мотель</p>
-                    <button type="button">Подробнее</button>
+                    <a href="#">Подробнее</a>
                   </div>
                   <div class="sorting-column sorting-column2">
                     <p>От 3000р.</p>
-                    <button type="button">Забронировать</button>
+                    <a href="#">Забронировать</a>
                   </div>
                 </div>
               </div>
               <div class="sorting-rating">
-                <div class="stars">
-                  <img src="img/3stars.png"  alt="звёздочки">
+                <div class="stars three-stars">
+                  3 звезды
                 </div>
                 <p>Рейтинг: 8.9</p>
               </div>
@@ -150,17 +148,17 @@
                 <div class="sorting-row">
                   <div class="sorting-column sorting-column1">
                     <p>Апартаменты</p>
-                    <button type="button">Подробнее</button>
+                    <a href="#">Подробнее</a>
                   </div>
                   <div class="sorting-column sorting-column2">
                     <p>От 2000р.</p>
-                    <button type="button">Забронировать</button>
+                    <a href="#">Забронировать</a>
                   </div>
                 </div>
               </div>
               <div class="sorting-rating">
-                <div class="stars">
-                  <img src="img/2stars.png"  alt="звёздочки">
+                <div class="stars two-stars">
+                  2 звезды
                 </div>  
                 <p>Рейтинг: 9.2</p>
               </div>
@@ -169,7 +167,7 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer">
+    <footer class="site-footer hostels-footer">
       <div class="hashteg-area">
         <a class="hashteg" href="#">#visitsedona</a>
       </div>

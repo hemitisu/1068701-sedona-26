@@ -1073,6 +1073,8 @@ label[for="children-number"]{
 }
 
 .panel h2{
+  display: flex;
+  flex-shrink: 0;
   margin: 0;
   margin-right: 50px;
   font-size: 21px;
